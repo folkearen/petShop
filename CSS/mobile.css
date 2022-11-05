@@ -1,0 +1,342 @@
+:root {
+    --buttom-secondary-color: rgba(138, 135, 135, 1);
+    --color-miniBanner: rgba(34, 34, 34, 1);
+    --font-secondary-color: rgba(102, 102, 102, 1);
+    --primary-color: rgba(240, 168, 62, 1);
+    --secondary-color: rgba(60, 35, 19, 1);
+}
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family:'Inter', sans-serif;
+}
+.mini-banner {
+    display: none;
+}
+.nav-bar {
+    display: none;
+}
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 2.8rem;
+}
+.logo {
+    margin-left: 1rem;
+    height: 2rem;
+    width: 12rem;
+}
+.icon-menu { 
+    height: 1.5rem;
+    margin-right: 1rem;
+    width: 2rem;
+}
+.banner-principal {
+    align-items: center;
+    background-image: url(../img/mobileImg/mobileBanner.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+    width: 100%;
+}
+.saludo{
+    background-color: white;
+    border-radius: 0.4rem;
+    margin-top: 11rem;
+    padding: 0.6rem;
+    text-align: center;
+    width: 90%;
+} 
+.saludo p {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.aviso-descuento {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    margin-top: 1.4rem;
+    margin-right: 1.2rem;
+    text-align: right;
+    width: 90%;
+}
+.boton-banner{
+    display: flex;
+    justify-content: end;
+    margin-top: 0.6rem;
+    width: 90%;  
+}
+.boton-banner button {
+    border: none;
+    border-radius: 0.6rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 3.8rem;
+    line-height: 1.9rem;
+    margin-right: 1.4rem;
+    padding: 0.8rem;
+    width: 10.8rem;
+}
+.patita {
+    display: block;
+    height: 5rem;
+    margin: 1rem auto;
+    width: 6rem;
+}
+.seccion-productos h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4,8rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+.productos-destacados {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    margin: 1.6rem auto;
+    text-align: center;
+    width: 70%;
+}
+.productos-destacados a {
+    color: var(--font-secondary-color);
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+.cards-container {
+    align-items: center;
+    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+.card picture img {
+    height: 20rem;
+    width: 20rem;
+}
+.nombre-producto {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.precio {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.form-contacto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.form-contacto p {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.7rem;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+}
+.input-container {
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem 0;
+    width: 100%;
+    margin-bottom: 0.4rem;
+}
+.formulario input {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    height: 1.8rem;
+    line-height: 1rem;
+    width: 90%;
+}
+.formulario input::placeholder{
+    color: var(--font-secondary-color);
+    background-color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1rem;  
+}
+.form-control {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    width: 100%;
+}
+.reset,.send  {
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 3rem;
+    line-height: 1.9rem;
+    width: 46%;
+}
+.send {
+    background-color: var(--primary-color);
+}
+.reset {
+    background-color: var(--buttom-secondary-color); 
+}
+.subscription-container {
+    background-color: var(--primary-color);
+    display: block;
+}
+.suscrip-top{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.suscrip-top img{
+    height: 2rem;
+    margin-left: 0.4rem;
+    margin-top: 1rem;
+    width: 3rem;
+}
+.suscrip-top p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.suscrip-bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+}
+.suscrip-input {
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    margin-left: 1.2rem;
+    padding: 0.8rem 0.8rem;
+    width: 70%;
+}    
+.suscrip-input input{
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    height: 1.5rem;
+    line-height: 1rem;
+    width: 90%;
+}
+.send-suscrip {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 3rem;
+    line-height: 1.8rem;
+    margin-left: 0.6rem;
+    margin-right: 2rem;
+    width: 28%;
+}
+.info-container{
+    align-items: center;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-top {
+    margin-top: 1rem; 
+    
+}
+.logo-footer {
+    height: 1.8rem;
+    margin-bottom: 0.5rem;
+    width: 11rem ; 
+}
+.info-card {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.vAddress {
+    height: 4rem;
+    width: 4rem; 
+}
+ .vPhone {
+    height: 2.8rem;
+    width: 2.8rem; 
+}
+.vMail {
+    height: 2.5rem;
+    width: 2.5rem; 
+}
+.internalCircle {
+    align-items: center;
+    background-color: var(--buttom-secondary-color);
+    border: var(--font-secondary-color) 0.3rem solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.info-card p {
+    color:white;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.info-card span {
+    color: var(--buttom-secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.derechos {
+    text-align: center;
+    background-color: var(--color-miniBanner);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+}
